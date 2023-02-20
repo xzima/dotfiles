@@ -1,0 +1,15 @@
+[core]
+	eol = lf
+	autocrlf = input
+	quotePath = false
+	commitGraph = true
+	longpaths = true
+[receive]
+	advertisePushOptions = true
+[gc]
+	writeCommitGraph = true
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
