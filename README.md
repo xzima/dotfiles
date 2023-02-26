@@ -30,8 +30,13 @@ Landing on a new brand server trough ssh, just run this :
 
 ```shell
 sudo apt-get install git zsh bat micro ripgrep
+sudo useradd -s /bin/zsh -m <username> # create user
+sudo passwd <username> # set user password
+su <username> # login as user
 git clone https://github.com/xzima/dotfiles.git
 git clone https://github.com/zsh-users/antigen.git .antigen
+# install https://github.com/hyperupcall/autoenv
+curl -#fLo- 'https://raw.githubusercontent.com/hyperupcall/autoenv/master/scripts/install.sh' | sh 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 dotfiles/install.sh
 ```
