@@ -32,6 +32,7 @@ Landing on a new brand server trough ssh, just run this :
 sudo apt-get install git zsh bat micro ripgrep
 sudo useradd -s /bin/zsh -m <username> # create user
 sudo passwd <username> # set user password
+sudo usermod -aG docker <username> # add user to docker group(optional)
 su <username> # login as user
 git clone https://github.com/xzima/dotfiles.git
 git clone https://github.com/zsh-users/antigen.git .antigen
