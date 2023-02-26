@@ -16,7 +16,17 @@ fi
 # alias svim="sudo vim"
 alias c='clear'
 alias ed='$EDITOR'
-alias vw='bat'
+if [ -x /usr/bin/bat ]; then
+	alias vw='bat'
+fi
+if [ -x /usr/bin/bat ]; then
+  alias vw='bat'
+elif [ -x /usr/bin/batcat ]; then
+  alias vw='batcat'
+else
+  echo "bat not found!"
+fi
+
 alias git-u='git config --list | rg user'
 alias git-github='git config user.name "Alex Zima"; git config user.email xzima@ro.ru'
 # alias vimvim="vim ~/.vimrc"
