@@ -28,7 +28,6 @@ else
 fi
 
 alias git-u='git config --list | rg user'
-alias git-github='git config user.name "Alex Zima"; git config user.email xzima@ro.ru'
 # alias vimvim="vim ~/.vimrc"
 # alias vimbashrc="vim ~/.bashrc"
 # alias vimalias="vim ~/.bash_aliases"
