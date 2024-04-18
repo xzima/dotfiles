@@ -55,7 +55,7 @@ alias wtf='tail -f /var/log/{dmesg,messages,*{,/*}{log,err}}'
 # curl icanhazip.com
 # curl ipecho.net/plain
 # curl ifconfig.co
-alias ip="curl checkip.amazonaws.com"
+alias myip="curl checkip.amazonaws.com"
 
 # Enhanced WHOIS lookups
 # alias whois="whois -h whois-servers.net"
